@@ -270,6 +270,13 @@ PRODUCT_PACKAGES += \
     qti-vzw-ims-internal \
     com.qualcomm.qti.imscmservice@1.0-java
 
+# PP daemon
+PRODUCT_COPY_FILES += \
+    vendor/motorola/msm8916-common/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
+    vendor/motorola/msm8916-common/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    vendor/motorola/msm8916-common/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
+    vendor/motorola/msm8916-common/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so
+
 # Peripheral Manager
 PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/vendor/bin/pm-proxy:system/vendor/bin/pm-proxy \
