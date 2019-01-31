@@ -148,6 +148,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/motorola/msm8916-common/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw
 
+# Perf stack
+PRODUCT_COPY_FILES += \
+    vendor/motorola/msm8916-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+	vendor/motorola/msm8916-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
+
 # Qualcomm framework
 PRODUCT_COPY_FILES += \
     vendor/motorola/msm8916-common/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
